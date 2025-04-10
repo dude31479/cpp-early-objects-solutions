@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+    // Price for seat tickets in each class
     const double CLASS_A = 15.00,
                  CLASS_B = 12.00,
                  CLASS_C = 9.00;
