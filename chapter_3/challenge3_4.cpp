@@ -1,20 +1,29 @@
-// How much insurance?
-// This program advises the user on how much they should
-// insure their property for, given the recommended minimum amount
-// is 80% of what it would cost to replace it.
+/***************************************************
+ *                                                 *
+ *              HOW MUCH INSURANCE                 *
+ *                                                 *
+ *      The recommended minimum that a             *
+ *      homeowner should insure their property     *
+ *      for is 80% of their home's value. This     *
+ *      program accepts an input from the user     *
+ *      and calculates the recommended minimum     *
+ *      amount they should purchase in insurance.  *
+ *                                                 *
+ **************************************************/
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
 int main()
 {
-    const double minimum = 0.80;
+    const double recommended_minimum = 0.80;
     double insurance, value;
 
+    // Get the property's value
     cout << "What is your property value? ";
     cin >> value;
 
-    insurance = value * minimum;
+    insurance = value * recommended_minimum;
 
     cout << fixed << setprecision(2);
     cout << "The minimum amount of insurance you\n";
