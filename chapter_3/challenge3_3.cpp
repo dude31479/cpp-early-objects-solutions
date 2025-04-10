@@ -1,9 +1,13 @@
-// Housing costs
-// This program wil calculate the monthly and annual costs of the combined bills:
-// - rent or mortgage payments
-// - utilities
-// - phones
-// - cable
+/**********************************************
+ *                                            *
+ *              HOUSING COSTS                 *
+ *                                            *
+ *      This program will calculate a user's  *
+ *      monthly and annual rent, utilities,   * 
+ *      phone, and cable bills.               *
+ *                                            *
+ *                                            *
+ *********************************************/
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -12,21 +16,22 @@ using namespace std;
 
 int main()
 {
-    double rent, utilities, phone, cable;
-    double monthly = 0, annual;
+    double rent, 
+           utilities, 
+           phone, 
+           cable,
+           monthly = 0, 
+           annual;
 
     cout << "This program will calculate your monthly and annual total bills.\n";
 
     // Get the monthly bills
     cout << "How much do you pay in rent/mortgage payments, each month? ";
     cin >> rent;
-    
     cout << "How much do you pay for utilities? ";
     cin >> utilities;
-
     cout << "How much is your phone bill? ";
     cin >> phone;
-
     cout << "And how much do you pay for cable? ";
     cin >> cable;
 
