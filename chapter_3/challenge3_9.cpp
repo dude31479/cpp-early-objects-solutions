@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-    const double widget_weight = 9.2;
+    const double WIDGET_WEIGHT = 9.2;
     double pallet;
     int num_widgets;
 
@@ -23,7 +23,7 @@ int main()
     cout << "How much does the pallet weight? ";
     cin >> pallet;
 
-    num_widgets = pallet / widget_weight;
+    num_widgets = pallet / WIDGET_WEIGHT;
 
     cout << "You have " << num_widgets << " widgets.\n";
     return 0;
