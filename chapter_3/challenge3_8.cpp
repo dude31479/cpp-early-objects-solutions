@@ -10,8 +10,8 @@ using namespace std;
 
 int main()
 {
-    const double child_price = 3.00,
-                 adult_price = 6.00;
+    const double CHILD_PRICE = 3.00,
+                 ADULT_PRICE = 6.00;
     
     int child_tickets, adult_tickets;
 
@@ -30,7 +30,7 @@ int main()
     cin >> child_tickets;
     cin.get();
 
-    gross_profit = child_price * child_tickets + adult_price * adult_tickets;
+    gross_profit = CHILD_PRICE * child_tickets + ADULT_PRICE * adult_tickets;
     distributor_price = 0.8 * gross_profit;
     net_profit = gross_profit - distributor_price;
 
