@@ -1,4 +1,13 @@
-// How many widgets?
+/**********************************************
+ *                                            *
+ *            HOW MANY WIDGETS?               *   
+ *                                            *
+ *  This program is designed for the          *
+ *  owner of a "widget factory," in           *
+ *  order to be able to discern the number    *
+ *  of widgets on a given pallet, by weight.  *
+ *                                            * 
+ *********************************************/
 #include <iostream>
 #include <iomanip>
 using namespace std;
