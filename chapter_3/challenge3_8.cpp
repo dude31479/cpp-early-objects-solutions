@@ -1,8 +1,12 @@
-// Box Office
-// This program will ask the user for the name of a movie
-// and how many adult and child tickets were sold, then 
-// calculate the gross and net profit for a theater when 
-// the distributor takes 80% 
+/************************************************************
+ *                                                          *
+ *                      BOX OFFICE                          *
+ *  This program will ask the user for the name of a movie  *
+ *  and how many adult and child tickets were sold, then    *
+ *  calculate the gross and net profit for a theater when   *
+ *  the distributor takes 80%                               *
+ *                                                          *
+ * *********************************************************/
 #include <iostream>
 #include <iomanip>
 #include <string>
