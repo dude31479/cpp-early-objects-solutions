@@ -18,9 +18,10 @@ int main()
     double pallet;
     int num_widgets;
 
-    cout << "This program will tell you how many widgets you have\n";
-    cout << "based on the weight of a pallet (of widgets)\n";
-    cout << "How much does the pallet weight? ";
+    cout << "This program will tell you how many widgets\n"
+         << "you have, based on the weight of a pallet\n"
+         << "(of widgets)\n";
+    cout << "How much does the pallet weigh? ";
     cin >> pallet;
 
     num_widgets = pallet / WIDGET_WEIGHT;
