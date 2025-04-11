@@ -8,6 +8,8 @@
 #include <iomanip>
 using namespace std;
 
+#define NUM_MONTHS 3
+
 int main()
 {
     string month;
@@ -20,15 +22,15 @@ int main()
     
     string output = "The average monthly rainfall for ";
 
-    for (int i = 0; i < 3; i++)
+    for (int count = 1; count <= NUM_MONTHS; count++)
     {
-        cout << "Enter month " << (i+1) << ": ";
+        cout << "Enter month " << count << ": ";
         cin  >> month;
         cout << "What was the amount of rain in " << month << "? ";
         cin  >> rain;
         cin.get();
         total += rain;
-        if (i < 2) 
+        if (count < NUM_MONTHS) 
         {
             output += month + ", ";
         }
