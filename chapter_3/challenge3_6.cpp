@@ -1,4 +1,8 @@
-// Test Average
+/************************
+ *                      *
+ *  Test Score Average  *
+ *                      *
+ ***********************/
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -7,22 +11,18 @@ using namespace std;
 
 int main()
 {
-    int score1, score2, score3, 
-        score4, score5, total;
+    int score, total = 0;
     double average;
 
-    cout << "Enter the first test score: ";
-    cin >> score1;
-    cout << "Enter the second test score: ";
-    cin >> score2;
-    cout << "Enter the third test score: ";
-    cin >> score3;
-    cout << "Enter the fourth test score: ";
-    cin >> score4;
-    cout << "Enter the fifth test score: ";
-    cin >> score5;
+    cout << "This program will calculate the average"
+         << "of five test scores" << endl;
 
-    total = score1 + score2 + score3 + score4 + score5;
+    for (int i = 1; i <= 5; i++) {
+        cout << "Enter score #" << i << ": ";
+        cin  >> score;
+        total += score;
+    }
+
     average = static_cast<double>(total) / NUM_TESTS;
 
     cout << fixed << setprecision(1);
