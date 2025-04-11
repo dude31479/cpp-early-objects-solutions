@@ -38,12 +38,13 @@ int main()
     distributor_price = 0.8 * gross_profit;
     net_profit = gross_profit - distributor_price;
 
-    cout << "Movie Name: " << setw(25) << "\"" << movie_title << "\"" << endl;
-    cout << "Adult tickets sold: " << setw(18) << adult_tickets << endl;
-    cout << "Child tickets sold: " << setw(20) << child_tickets << endl;
-    cout << "Gross profit: " << gross_profit << endl;
-    cout << "Distributor price: " << distributor_price << endl;
-    cout << "Net profit: " << net_profit << endl;
+    cout << "Movie Name: " << right << setw(10) << "\"" << movie_title << "\"" << endl;
+    // cout << "Adult tickets sold: " << adult_tickets << endl;
+    // cout << "Child tickets sold: " <<  child_tickets << endl;
+    cout << fixed << showpoint << setprecision(2);
+    cout << "Gross profit: " << right << setw(12) << "$" << gross_profit << endl;
+    cout << "Distributor price: " << right << setw(7)  << "$" << distributor_price << endl;
+    cout << "Net profit: " << right << setw(14) << "$" << net_profit << endl;
 
     return 0;
 }
