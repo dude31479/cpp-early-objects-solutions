@@ -30,7 +30,7 @@ int main()
     total = rain1 + rain2 + rain3;
     avg = total / 3;
 
-    cout << "The averabe monthly rainfall for " << month1
+    cout << "The average monthly rainfall for " << month1
          << ", " << month2 << ", and " << month3;
     cout << " was " << fixed << setprecision(2) << avg << " inches.\n";
     return 0;
