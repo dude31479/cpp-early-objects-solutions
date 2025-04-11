@@ -41,6 +41,9 @@ int main()
     cout << "Movie Name: " << setw(25) << "\"" << movie_title << "\"" << endl;
     cout << "Adult tickets sold: " << setw(18) << adult_tickets << endl;
     cout << "Child tickets sold: " << setw(20) << child_tickets << endl;
+    cout << "Gross profit: " << gross_profit << endl;
+    cout << "Distributor price: " << distributor_price << endl;
+    cout << "Net profit: " << net_profit << endl;
 
     return 0;
 }
